@@ -49,7 +49,7 @@ class JobForm(FlaskForm):
     company = StringField(label="Company", validators=[DataRequired()])
     job_description = TextAreaField(label="Job description", validators=[DataRequired()])
     post_url = StringField(label="Post URL", validators=[DataRequired(), URL()])
-    search_terms = StringField(label="Enter search terms separated by a comma and space.", validators=[DataRequired()])
+    search_terms = StringField(label="Enter search terms separated by a comma and space", validators=[DataRequired()])
     submit = SubmitField(label='Submit')
 
 
